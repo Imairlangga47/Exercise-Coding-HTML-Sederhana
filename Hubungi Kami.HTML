@@ -8,24 +8,24 @@
         #map {height: 400px; width: 100%;}
     </style>
 </head>
-<body style="background-color: rgb(17, 17, 44); margin: 0px;">
-    <section style="display: flex; flex-direction: row; margin-left: 30px;">
+<body style="background-color: rgb(17, 17, 44); padding: 0px 0px 0px 50px;">
+    <section style="display: flex; flex-direction: row;">
         <h1 style="display: flex; -webkit-text-fill-color: aliceblue; font-family: monospace; font-weight: bold; height: 10vh; margin-bottom: 0px; font-size: 28px;">Lokasi Kami</h1>
     </section>
 
     <!-- Embed Google Maps -->
-    <section id="map" style="display: flex; flex-direction: row; margin-left: 30px;">
+    <section id="map" style="display: flex; flex-direction: row; gap: 30px;">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7681.390425084014!2d110.37656358606235!3d-7.764763347309159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1741031546815!5m2!1sid!2sid"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <div style="display: flex; flex-direction: column;">
-            <h1 style="display: flex; -webkit-text-fill-color: aliceblue; font-family: monospace; font-weight: bold; height: 0vh; margin-left: 110px; font-size: 28px; margin-bottom: 40px;">Hubungi Kami</h1>
-            <h2 style="display: flex; -webkit-text-fill-color: aliceblue; font-family: monospace; font-weight: bold; height: 0vh; margin-left: 50px; font-size: 20px; margin-bottom: 20px;">No Telepon : 0877-7777-777 </h2>
-            <h3 style="display: flex; -webkit-text-fill-color: aliceblue; font-family: monospace; font-weight: bold; height: 0vh; margin-left: 50px; font-size: 20px; margin-bottom: 20px;">Email : AirlangaJS@gmail.com </h3>
-        </div> 
-        
+        <DIV style="display: flex; flex-direction: column; margin: 0px 30px 0px 30px; width: 100vh;">
+            <div style="display: flex; flex-direction: row; justify-content: center; color: aliceblue; font-family: monospace; font-weight: bold; font-size: 28px; margin-bottom: 40px;">[Hubungi Kami]</div>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: flex; color: aliceblue; font-family: monospace; font-weight: bold; font-size: 20px;">No Telepon : 0877-7777-777 </div>
+                <div style="display: flex; color: aliceblue; font-family: monospace; font-weight: bold; font-size: 20px;">Email : AirlangaJS@gmail.com </div>
+            </div>
+        </DIV> 
     </section>
-    
 </body>
 </html>
