@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <style>
+    /* Sidebar Styling */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 200px;
+        top: 0;
+        left: 0;
+        background-color: #ff0000;
+        height: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    /* Content Styling */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    /* Section styling */
+    .section {
+      display: none;
+    }
+
+    /* Active section that shows up */
+    .section:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar with hyperlinks -->
+  <div class="sidebar">
+    <a href="#studentProfile">Student Profile</a>
+    <a href="#assignmentGrade">Assignment and Grade</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#learningMaterials">Learning Materials</a>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <div id="studentProfile" class="section">
+      <h2>Student Profile</h2>
+      <p>This is the section where you can view and edit your profile details.</p>
+    </div>
+
+    <div id="assignmentGrade" class="section">
+      <h2>Assignment and Grade</h2>
+      <p>This section displays your assignments, grades, and any feedback from the tutor.</p>
+    </div>
+
+    <div id="schedule" class="section">
+      <h2>Schedule</h2>
+      <p>View your upcoming classes and events here.</p>
+    </div>
+
+    <div id="learningMaterials" class="section">
+      <h2>Learning Materials</h2>
+      <p>Access your course materials, resources, and study guides in this section.</p>
+    </div>
+  </div>
+
+</body>
+</html>
