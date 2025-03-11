@@ -9,7 +9,7 @@
     height: 100vh;
     margin: 0px;
     background-color:rgb(17, 17, 44);
-    gap: 1%;
+    gap: 0.5%;
     position: absolute;
 }
 
@@ -18,9 +18,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 20%;
     width: 100%;
-    gap: 5%;
+    gap: 2%;
     margin: 0%;
 }
 
@@ -29,7 +29,7 @@
     padding: 1%;
     background-color: rgb(141, 102, 41);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: bold;
 }
 
@@ -39,58 +39,22 @@
     justify-content: center;
     align-items: center;
     margin: 0%;
+    width: 12%;
+    height: 50%;
    
-}
-
-.account-logout {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 2%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 2vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font: weight 1000;
-    
-}
-
-.button-logout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8vw;
-    padding: 1.5vh 3vw;
-    border-width: 1vh;
-    border-style: double;
-    border-radius: 5vh;
-    border-color: rgb(94, 91, 85);
-    font-size: 2.5vh;
-    font-family: 'Courier New', Courier, monospace;
-    font: weight 1000;
-    background-color:#d8a224;
-    color: aliceblue;
-    font-weight: bold;
-    gap: 40%;
-}
-
-.logout-icon {
-    display: flex;
-    align-items: center;
-    width: 3vw;
-    height: 3vh;
 }
 
 .account-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 75%;
+    height: 90%;
     width: 100%;
     margin: 0%; 
-    gap: 3%;
-    background-color: red;
+    gap: 0%;
+    border-width: 0.6vh;
+    border-style:groove;
+    border-color: rgb(196, 193, 186);
 }
 
 .account-sidebar {
@@ -98,13 +62,16 @@
     flex-direction: column;
     gap: 10%;
     width: 20%;
-    background-color:rgb(228, 184, 111);
+    background-color:#be9639;
     height: 100%;
-    padding-top: 2.5%;
+    padding-top: 1%;
     padding-left: 0%;
     font-size: 2.5vh;
     font-family: Arial, Helvetica, sans-serif;
     font: weight 1000;
+    border-width: 0vh 0.6vh 0vh 0vh;
+    border-style:groove;
+    border-color: rgb(196, 193, 186);
 }
 
 .sidebar-option-1 {
@@ -147,33 +114,279 @@
     color: aliceblue;
 }
 
+.sidebar-option-5 {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(17, 17, 44);
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: aliceblue;
+}
+
 .account-content {
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    justify-content: flex-start;
     width: 85%;
     height: 100%;
-    padding:5%
+
   }
 
-  .account-content {
+.account-content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7%;
+}
+
+.account-content-1-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.account-content-1-headerblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0%;
+    padding: 2vh;
+    background-color:#f8eac9;
+    width: 100%;
+    border-width: 0vh 0vh 0.6vh 0vh;
+    border-style:groove;
+    border-color: rgb(196, 193, 186);
+}
+
+.account-content-1-headertext {
+    margin-left: 3%;
+    font-size: 4.5vh;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color:rgb(17, 17, 44);
+}
+
+.account-logout {
+    display: flex;
+    flex-direction: row;
+    margin-right: 53%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 1000;   
+}
+
+.button-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    padding: 1vh 4vw;
+    border-width: 1vh;
+    border-style: groove;
+    border-radius: 5vh;
+    border-color: rgb(196, 193, 186);
+    font-size: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    background-color:#be9639;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.logout-icon {
+    display: flex;
+    align-items: center;
+    width: 2.75vw;
+    height: 2.75vh;
+}
+
+.account-content-1-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 87%;
+    height: 100%;
+    margin-left: 7%;
+    margin-top: 2.5%;
+}
+
+.photo-profile-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 43vh;
+    width: 30vw;
+    border-width: 1vh;
+    border-style: groove;
+    border-radius: 3vh;
+    border-color: rgb(196, 193, 186);
+    overflow: hidden;
+}
+
+.photo-profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account-content-1-content-text {
     display: flex;
     flex-direction: column;
     gap: 10%;
-    width: 85%;
+    width: 50%;
+    margin-top: 1.5vh;
+    margin-left: 0vh;
+}
+
+.account-content-1-content-textheader {
+    font-size: 4vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.account-content-1-content-textcontent {
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.text-gap {
+    display: flex;
+    flex-direction:column;
+    height: 20%;
+    gap: 17%;
+}
+
+.account-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7%;
+}
+
+.account-content-1-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.account-content-1-headerblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0%;
+    padding: 2vh;
+    background-color:#f8eac9;
+    width: 100%;
+    border-width: 0vh 0vh 0.6vh 0vh;
+    border-style:groove;
+    border-color: rgb(196, 193, 186);
+}
+
+.account-content-1-headertext {
+    margin-left: 3%;
+    font-size: 4.5vh;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color:rgb(17, 17, 44);
+}
+
+.account-logout {
+    display: flex;
+    flex-direction: row;
+    margin-right: 53%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 1000;   
+}
+
+.button-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    padding: 1vh 4vw;
+    border-width: 1vh;
+    border-style: groove;
+    border-radius: 5vh;
+    border-color: rgb(196, 193, 186);
+    font-size: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    background-color:#be9639;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.logout-icon {
+    display: flex;
+    align-items: center;
+    width: 2.75vw;
+    height: 2.75vh;
+}
+
+.account-content-2-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    width: 87%;
     height: 100%;
-    padding:5%
-  }
+    margin-left: 7%;
+    margin-top: 1%;
+}
 
-  /* Section styling */
-  .section {
+.account-content-2-table-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.table-header {
+    background-color: #808080;
+    color: aliceblue;
+    font-size: 2.5vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.table-content {
+    color: aliceblue;
+    font-size: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font: weight 1000;
+    color: aliceblue;
+    font-weight: bold; 
+}
+
+.table-textcenter {
+    text-align: center;
+}
+
+.section-active > div {
     display: none;
-  }
+}
 
-  /* Active section that shows up */
-  .section:target {
+.section-active > div:target {
     display: block;
-  }
+}
 
 .login-footer-layout {
     display: flex;

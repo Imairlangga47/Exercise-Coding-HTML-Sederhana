@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Dashboard</title>
-  <style>
-    /* Sidebar Styling */
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 200px;
-        top: 0;
-        left: 0;
-        background-color: #ff0000;
-        height: 100%;
-        padding-top: 20px;
-        padding-left: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Account - Sidebar Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
 
-    /* Content Styling */
-    .content {
-      margin-left: 220px;
-      padding: 20px;
-    }
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            position: fixed;
+        }
 
-    /* Section styling */
-    .section {
-      display: none;
-    }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #e4e4e4;
+        }
 
-    /* Active section that shows up */
-    .section:target {
-      display: block;
-    }
-  </style>
+        .sidebar a:hover {
+            background-color: #ccc;
+        }
+
+        /* Content layout beside the sidebar */
+        .content {
+            margin-left: 220px; /* Space for sidebar */
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section:target {
+            display: block;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Sidebar with hyperlinks -->
-  <div class="sidebar">
-    <a href="#studentProfile">Student Profile</a>
-    <a href="#assignmentGrade">Assignment and Grade</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#learningMaterials">Learning Materials</a>
-  </div>
-
-  <!-- Main Content Area -->
-  <div class="content">
-    <div id="studentProfile" class="section">
-      <h2>Student Profile</h2>
-      <p>This is the section where you can view and edit your profile details.</p>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Student Account</h3>
+        <a href="#section1">Sidebar Option 1</a>
+        <a href="#section2">Sidebar Option 2</a>
+        <a href="#section3">Sidebar Option 3</a>
+        <a href="#section4">Sidebar Option 4</a>
     </div>
 
-    <div id="assignmentGrade" class="section">
-      <h2>Assignment and Grade</h2>
-      <p>This section displays your assignments, grades, and any feedback from the tutor.</p>
-    </div>
+    <!-- Main Content -->
+    <div class="content">
+        <div id="section1" class="section">
+            <h2>Sidebar Option 1 - Student Profile</h2>
+            <p>This is the content for Sidebar Option 1, which is the student profile.</p>
+        </div>
 
-    <div id="schedule" class="section">
-      <h2>Schedule</h2>
-      <p>View your upcoming classes and events here.</p>
-    </div>
+        <div id="section2" class="section">
+            <h2>Sidebar Option 2 - Student Grades</h2>
+            <p>This is the content for Sidebar Option 2, which shows student grades.</p>
+        </div>
 
-    <div id="learningMaterials" class="section">
-      <h2>Learning Materials</h2>
-      <p>Access your course materials, resources, and study guides in this section.</p>
+        <div id="section3" class="section">
+            <h2>Sidebar Option 3 - Student Assignments</h2>
+            <p>This is the content for Sidebar Option 3, which shows student assignments.</p>
+        </div>
+
+        <div id="section4" class="section">
+            <h2>Sidebar Option 4 - Student Schedule</h2>
+            <p>This is the content for Sidebar Option 4, which shows the student schedule.</p>
+        </div>
     </div>
-  </div>
 
 </body>
 </html>

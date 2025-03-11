@@ -6,57 +6,239 @@
     <title>Your Account</title>
     <link rel="stylesheet" href="Login-Account.css">
 </head>
-<body>
-    <body class="general-layout">
-        <section class="account-header">
-            <img src="LOGO WEBSITE-Photoroom.png" class="account-logo" height="36%" width="20%">
-            <p class="account-title">WE ARE HERE FOR BEING DEVELOPER</p>
-        </section>
-        <section class="account-logout">
-            <div>  </div>
-            <Button class="button-logout">
-                <img src="Power Button.png" class="logout-icon">
-                LOGOUT
-            </Button>
-        </section>
-        <section class="account-section">
-            <div class="account-sidebar">
-                <a class="sidebar-option-1" href="#studentprofile">Student Profile</a>
-                <a class="sidebar-option-2" href="#assignmentgrade">Assignment and Grade</a>
-                <a class="sidebar-option-3" href="#schedule">Schedule</a>
-                <a class="sidebar-option-4" href="#learningmaterials">Learning Materials</a>
+<body class="general-layout">
+    <section class="account-header">
+      <img src="LOGO WEBSITE-Photoroom.png" class="account-logo">
+      <p class="account-title">WE ARE HERE FOR BEING DEVELOPER</p>
+    </section>
+    <section class="account-section">
+      <div class="account-sidebar">
+        <a class="sidebar-option-1" href="#profileinformation">Student Profile</a>
+        <a class="sidebar-option-2" href="#assignmentgrade">Assignment and Grade</a>
+        <a class="sidebar-option-3" href="#schedule">Schedule</a>
+        <a class="sidebar-option-4" href="#learningmaterials">Learning Materials</a>
+        <a class="sidebar-option-5" href="#mentoring">Mentoring</a>
+      </div>
+      <div class="account-content">
+        <div class="section-active">
+          <div id="profileinformation" class="account-content-1">
+            <div class="account-content-1-header">
+              <div class="account-content-1-headerblock">
+                <div class="account-content-1-headertext">PROFILE INFORMATION</div>
+                <Button class="button-logout">
+                  <img src="Power Button.png" class="logout-icon">
+                  LOGOUT
+                </Button>
+              </div> 
               </div>
-              <div class="account-content">
-                <div id="studentprofile" class="account-content-1">
-                  <h2>Student Profile</h2>
-                  <p>This is the section where you can view and edit your profile details.</p>
+              <div class="account-content-1-content">
+                <div class="photo-profile-layout">
+                  <img src="Pas Photo 3 x 4.jpg" class="photo-profile">
                 </div>
-                <div id="assignmentGrade" class="section">
-                  <h2>Assignment and Grade</h2>
-                  <p>This section displays your assignments, grades, and any feedback from the tutor.</p>
+              <div class="account-content-1-content-text">
+                <div class="text-gap">
+                  <div class="account-content-1-content-textheader">STUDENT NAME</div>
+                  <div class="account-content-1-content-textcontent">Bambang Kuncoro</div>
                 </div>
-            
-                <div id="schedule" class="section">
-                  <h2>Schedule</h2>
-                  <p>View your upcoming classes and events here.</p>
+                <div class="text-gap">
+                  <div class="account-content-1-content-textheader">AGE</div>
+                  <div class="account-content-1-content-textcontent">100 Years Old</div>
                 </div>
-            
-                <div id="learningMaterials" class="section">
-                  <h2>Learning Materials</h2>
-                  <p>Access your course materials, resources, and study guides in this section.</p>
+                <div class="text-gap">
+                    <div class="account-content-1-content-textheader">DOMICILE</div>
+                    <div class="account-content-1-content-textcontent">Yogyakarta (YK)</div>
                 </div>
               </div>
-        </section>
-        <section class="login-footer-layout">
-            <footer class="login-footer-style">
-                <p>&copy; 2025 Airlangga JavaScript Class</p>
-                <p style="gap: 20px; width: 100%;"><a href="kebijakan-privasi.html" target="_blank">Kebijakan Privasi</a> | <a href="Hubungi Kami.HTML" target="_blank">Hubungi Kami</a></p>
-           </footer>
-        </section>
-
-        </section>  
-    </body>
-    </html>
-    
+              <div class="account-content-1-content-text">
+                <div class="text-gap">
+                  <div class="account-content-1-content-textheader">STATUS</div>
+                  <div class="account-content-1-content-textcontent">SILVER (ACTIVE)</div>
+                </div>
+                <div class="text-gap">
+                  <div class="account-content-1-content-textheader">LEANING STAGES</div>
+                  <div class="account-content-1-content-textcontent">21/54</div>
+                </div>
+                <div class="text-gap">
+                  <div class="account-content-1-content-textheader">OVERALL GRADE</div>
+                  <div class="account-content-1-content-textcontent">82/100</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-active">
+          <div id="assignmentgrade" class="account-content-2">
+            <div class="account-content-1-header">
+              <div class="account-content-1-headerblock">
+                <div class="account-content-1-headertext">ASSIGNMENT & GRADE</div>
+                <Button class="button-logout">
+                  <img src="Power Button.png" class="logout-icon">
+                  LOGOUT
+                </Button>
+              </div> 
+              </div>
+              <div class="account-content-2-content">
+                <div class="account-content-2-table-layout">
+                  <table border="2" cellpadding="10" cellspacing="0">
+                    <thead>
+                      <tr class="table-header">
+                          <th>No.</th>
+                          <th>Courses</th>
+                          <th>Quiz 1</th>
+                          <th>Quiz 2</th>
+                          <th>Exam</th>
+                          <th>Overall Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-content">
+                          <td class="table-textcenter">1.</td>
+                          <td>Introduction of Visual Code Studio</td>
+                          <td class="table-textcenter">90/100</td>
+                          <td class="table-textcenter">77/100</td>
+                          <td class="table-textcenter">83/100</td>
+                          <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">2.</td>
+                        <td>Introduction Structure of HTML</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">3.</td>
+                        <td>Element & Attributes for Text and Paragraph</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">4.</td>
+                        <td>Element & Attributes for Media</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">5.</td>
+                        <td>Element & Attributes for Table and Data</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">6.</td>
+                        <td>Element & Attributes for Form and Input</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">7.</td>
+                        <td>Element & Attributes for Link and Navigation</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">8.</td>
+                        <td>Layouting on HTML</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">9.</td>
+                        <td>Styling on HTML</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">10.</td>
+                        <td>Creating Login Page</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td>
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">11.</td>
+                        <td>Creating Dashboard</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td>
+                      </tr>
+                      <tr class="table-content">
+                        <td class="table-textcenter">12.</td>
+                        <td>Responsivenes Layout on PC/Mobille/Tablet</td>
+                        <td class="table-textcenter">90/100</td>
+                        <td class="table-textcenter">77/100</td>
+                        <td class="table-textcenter">83/100</td>
+                        <td class="table-textcenter">80/100</td> 
+                      </tr>
+                  </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-active">
+          <div id="schedule" class="account-content-3">
+            <div class="account-content-1-header">
+              <div class="account-content-1-headerblock">
+                <div class="account-content-1-headertext">SCHEDULE</div>
+                <Button class="button-logout">
+                  <img src="Power Button.png" class="logout-icon">
+                  LOGOUT
+                </Button>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="section-active">
+          <div id="learningmaterials" class="account-content-4">
+            <div class="account-content-1-header">
+              <div class="account-content-1-headerblock">
+                <div class="account-content-1-headertext">COURSE MATERIALS</div>
+                <Button class="button-logout">
+                  <img src="Power Button.png" class="logout-icon">
+                  LOGOUT
+                </Button>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="section-active">
+          <div id="mentoring" class="account-content-5">
+            <div class="account-content-1-header">
+              <div class="account-content-1-headerblock">
+                <div class="account-content-1-headertext">MENTORING</div>
+                <Button class="button-logout">
+                  <img src="Power Button.png" class="logout-icon">
+                  LOGOUT
+                </Button>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>              
+    </section>
+    <section class="login-footer-layout">
+      <footer class="login-footer-style">
+        <p>&copy; 2025 Airlangga JavaScript Class</p>
+        <p style="gap: 20px; width: 100%;"><a href="kebijakan-privasi.html" target="_blank">Kebijakan Privasi</a> | <a href="Hubungi Kami.HTML" target="_blank">Hubungi Kami</a></p>
+      </footer>
+    </section>
 </body>
 </html>
